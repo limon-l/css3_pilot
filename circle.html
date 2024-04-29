@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Field</title>
+    <style>
+        /* @keyframes ghuro{
+            0%{
+                left: 180px;
+                top: 0px;
+            }
+            25%{
+                left: 360px;
+                top: 180px;
+            }
+            50%{
+                right: 180px;
+                top: 360px;
+            }
+            75%{
+                left: 0px;
+                top: 180px;
+            }
+            100%{
+                top: 0px;
+                right: 180px;
+            }
+
+        } */
+        @keyframes ghuro {
+        0% { 
+                transform: rotate(0deg)
+                      translateY(180px);
+            } 
+  
+            100% { 
+                transform: rotate(360deg)  
+                      translateY(180px);
+            } 
+        }
+        .box{
+            position: relative;
+            left: 35%;
+        }
+        .field{
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            border-radius: 200px;
+        }
+        .gullu{
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            background-color: red;
+            position: relative;
+            left: 180px;
+            top: 180px;
+            animation: ghuro 2s ease-in-out 0s infinite forwards;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+<body>
+    <main class="box">
+        <div class="field">
+            <div class="gullu"></div>
+        </div>
+    </main>
+</body>
+</html>
